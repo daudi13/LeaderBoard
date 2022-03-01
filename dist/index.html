@@ -3,9 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wbpack Exercise</title>
+    <title>leaderboard</title>
 <script defer src="main.js"></script></head>
 <body>
-    <h1>Hello webpack!</h1>
+	<header>
+		<h1>leaderboard</h1>
+	</header>
+	<main>
+		<div class="container">
+			<div class="box-left">
+				<div class="recent-score">
+					<h2 class="subtitle">Recent scores</h2>
+					<button type="button">Refresh</button>
+				</div>
+				<ul class="score-board">
+				</ul>
+			</div>
+			<div class="box-right">
+				<h2 class="subtitle">Add your score</h2>
+				<form action="#">
+					<label for="input"><input type="text"  id="inputName" required placeholder="Your name"></label>
+					<label for="input"><input type="text" id="inputScore" required placeholder="Your Score"></label>
+					<button type="submit">Submit</button>
+				</form>
+			</div>
+		</div>
+	</main>
 </body>
 </html>
