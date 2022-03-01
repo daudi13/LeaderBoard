@@ -1,94 +1,94 @@
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 html {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-	display: flex;
-	height: 100vh;
-	flex-direction: column;
-	justify-content: center;
-	max-width: 800px;
-	margin: 0 auto;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 header {
-	margin-bottom: 4rem;
+  margin-bottom: 4rem;
 }
 
 .container {
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .container .box-left,
 .container .box-right {
-	width: 45%;
+  width: 45%;
 }
 
 .box-left .recent-score {
-	display: flex;
-	width: 100%;
-	justify-content: space-between;
-	margin-bottom: 20px;
-	align-items: center;
-}
-
-.recent-score button {
-	padding: 6px 10px;
-	box-shadow: 0 2px  5px black;
-}
-
-.score-board {
-	border: 2px solid black;
-	list-style-type: none;
-}
-
-li {
-	padding: 8px 10px;
-}
-
-li:nth-child(even) {
-	background-color: #d5d5d5;
-}
-
-.container .box-right {
-	display: flex;
-	flex-direction: column;
-}
-
-.box-right .subtitle {
-	margin-bottom: 20px;
-}
-
-form {
-	display: flex;
-	flex-direction: column;
-}
-
-form > label + label {
-	margin-top: 20px;
-}
-
-label input {
-	padding: 7px 0;
-	border: 2px solid black;
-}
-
-input:focus {
-	outline: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
 }
 
 form button {
-	margin-top: 20px;
-	width: 70px;
-	margin-left: 30%;
-	padding: 5px 10px;
-	box-shadow: 0 2px  5px black;
+  margin-top: 20px;
+  width: 70px;
+  margin-left: 30%;
+  padding: 5px 10px;
+  box-shadow: 0 2px  5px black;
+}
+
+.recent-score button {
+  padding: 6px 10px;
+  box-shadow: 0 2px  5px black;
+}
+
+.score-board {
+  border: 2px solid black;
+  list-style-type: none;
+}
+
+li {
+  padding: 8px 10px;
+}
+
+li:nth-child(even) {
+  background-color: #d5d5d5;
+}
+
+.container .box-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.box-right .subtitle {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form > label + label {
+  margin-top: 20px;
+}
+
+label input {
+  padding: 7px 0;
+  border: 2px solid black;
+}
+
+input:focus {
+  outline: none;
 }
