@@ -14,12 +14,17 @@ body {
   height: 100vh;
   flex-direction: column;
   justify-content: center;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
 header {
   margin-bottom: 4rem;
+}
+
+main {
+	width: 800px;
+	margin: 0 auto;
 }
 
 .container {
@@ -36,7 +41,7 @@ header {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   align-items: center;
 }
 
@@ -72,7 +77,7 @@ li:nth-child(even) {
 }
 
 .box-right .subtitle {
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 }
 
 form {
