@@ -22,7 +22,6 @@ module.exports = {
       {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
-        publicPath: '/https://github.com/daudi13/LeaderBoard/',
       },
       {
         test: /\.m?js$/,
