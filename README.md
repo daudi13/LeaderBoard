@@ -2,9 +2,9 @@
 
 # LeaderBoard
 
-![screenshot](./src/leaderBoard.png)
+![screenshot](./leaderBoard.png)
 
-> The leaderboard website displays scores submitted by different players. it also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service. The project is to be executed in three phases namely
+> The leaderboard website displays scores submitted by different players. it also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service. Checkout the live site [here](https://github.com/daudi13/LeaderBoard/settings/pages). The project is to be executed in three phases namely
 
 ### stages
 
