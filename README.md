@@ -17,6 +17,19 @@
 git clone  https://github.com/daudi13/LeaderBoard.git/<Your-Build-Directory>
 ```
 
+## running the project with webpack locally
+```
+npm install
+```
+
+```
+npm run build
+```
+
+```
+npm run start
+```
+
 ## Getting packages and debuging with Stylelint
 ```
 npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
