@@ -4,13 +4,13 @@
 
 ![screenshot](./src/leaderBoard.png)
 
-> The leaderboard website displays scores submitted by different players. it also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
+> The leaderboard website displays scores submitted by different players. it also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service. The project is to be executed in three phases namely
 
 ### stages
 
-- Project 1: list structure
-- Project 2: Interactive List
-- Project 3: Add and remove items
+- Project 1: basic page structure
+- Project 2: send and receive data from API
+- Project 3: Final touches
 
 #### Cloning the project
 ```
