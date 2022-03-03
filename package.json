@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/cli": "^7.17.6",
     "@babel/core": "^7.17.5",
     "@babel/preset-env": "^7.16.11",
     "babel-eslint": "^10.1.0",
@@ -34,7 +35,12 @@
     "webpack-dev-server": "^4.7.4"
   },
   "dependencies": {
-		"gh-pages": "^3.2.3",
-    "lodash": "^4.17.21"
+    "babel-core": "^6.0.20",
+    "babel-polyfill": "^6.0.16",
+    "babel-preset-es2015": "^6.0.15",
+    "babel-preset-stage-0": "^6.0.15",
+    "gh-pages": "^3.2.3",
+    "lodash": "^4.17.21",
+    "regenerator-runtime": "^0.13.9"
   }
 }
