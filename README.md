@@ -4,7 +4,7 @@
 
 ![screenshot](./leaderBoard.png)
 
-> The leaderboard website displays scores submitted by different players. it also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service. Checkout the live site [here](https://github.com/daudi13/LeaderBoard/dist). The project is to be executed in three phases namely
+> The leaderboard website displays scores submitted by different players. it also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service. Checkout the live site [here](https://daudi13.github.io/LeaderBoard/dist/). The project is to be executed in three phases namely
 
 ### stages
 
