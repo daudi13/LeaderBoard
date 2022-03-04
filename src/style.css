@@ -59,13 +59,18 @@ form button {
 }
 
 .score-board {
-  border: 2px solid black;
   list-style-type: none;
   overflow: hidden;
 }
 
+.score-board li + li {
+	margin-top: 5px;
+}
+
 li {
   padding: 8px 10px;
+	background-color: bisque;
+	border-radius: 5px;
 }
 
 li:nth-child(even) {
