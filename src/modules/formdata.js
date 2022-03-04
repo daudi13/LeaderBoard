@@ -3,7 +3,7 @@ export const createGame = (base, endpoint, bodyObject) => {
     method: 'POST',
     body: JSON.stringify(bodyObject),
     headers: { 'Content-type': 'application/json; charset=UTF-8' },
-  }).then((response) => response.json()).then((msg) => msg).catch((err) => (err));
+  }).then((response) => response.json()).then((msg) => console.log(msg)).catch((err) => (err));
 };
 
 export const addScore = (url, id, score, bodyObject) => {

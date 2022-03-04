@@ -22,7 +22,7 @@ btnSubmit.addEventListener('click', (e) => {
     score: score.value,
   };
 
-  addScore('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/', 'x9zbGm2F5WEx5bD6xV22/', 'scores', newForm);
+  addScore('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/', 'OAUb8nEFoWJiiqLP7UjF/', 'scores', newForm);
   username.value = '';
   score.value = '';
 });
@@ -34,7 +34,7 @@ btnRefresh.addEventListener('click', () => {
 onload = () => {
 		(async () => {
   try {
-    const vals = await fetchScore('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/', 'x9zbGm2F5WEx5bD6xV22/', 'scores');
+    const vals = await fetchScore('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/', 'OAUb8nEFoWJiiqLP7UjF/', 'scores');
 		const arrs = vals.result.sort((a, b) => b.score - a.score).slice(0, 10);
     arrs.map((arr) => {
       const listItem = document.createElement('li');
