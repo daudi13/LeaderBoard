@@ -35,7 +35,7 @@ onload = () => {
 		(async () => {
   try {
     const vals = await fetchScore('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/', 'x9zbGm2F5WEx5bD6xV22/', 'scores');
-		const arrs = vals.result.sort((a, b) => b.score - a.score);
+		const arrs = vals.result.sort((a, b) => b.score - a.score).slice(0, 15);
     arrs.map((arr) => {
       const listItem = document.createElement('li');
       listItem.textContent = `${arr.user}: ${arr.score}`;
