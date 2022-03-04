@@ -42,7 +42,7 @@ onload = () => {
       return scoreBox.appendChild(listItem);
     });
   } catch (err) {
-    return alert(err);
+    return err;
   }
 	})();
 
