@@ -3,7 +3,7 @@ export const createGame = (base, endpoint, bodyObject) => {
     method: 'POST',
     body: JSON.stringify(bodyObject),
     headers: { 'Content-type': 'application/json; charset=UTF-8' },
-  }).then((response) => response.json()).then((msg) => msg).catch((err) => alert(err));
+  }).then((response) => response.json()).then((msg) => msg).catch((err) => (err));
 };
 
 export const addScore = (url, id, score, bodyObject) => {
@@ -11,5 +11,5 @@ export const addScore = (url, id, score, bodyObject) => {
     method: 'POST',
     body: JSON.stringify(bodyObject),
     headers: { 'Content-type': 'application/json; charset=UTF-8' },
-  }).then((res) => res.json()).then((msg) => alert(msg.result)).catch((err) => alert(err));
+  }).then((res) => res.json()).then((msg) => msg.result).catch((err) => (err));
 };
