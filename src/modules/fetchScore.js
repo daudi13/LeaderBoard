@@ -1,8 +1,15 @@
-import 'regenerator-runtime/runtime'
+import 'regenerator-runtime/runtime';
 
-export const fetchScore = async function (url, id, score) {
-	const res = await fetch([url, id, score].join(''));
-	const data = await res.json();
-	const data2 = await data
-	console.log(data2)
-}
+const fetchScore = async function (url, id, score) {
+  try {
+    const res = await fetch([url, id, score].join(''));
+    const data = await res.json();
+    const objs = await data;
+
+    return objs;
+  } catch (err) {
+    return alert(err);
+  }
+};
+
+export default fetchScore;

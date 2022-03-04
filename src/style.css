@@ -11,7 +11,7 @@ html {
 
 body {
   display: flex;
-  height: 100vh;
+  height: 100%;
   flex-direction: column;
   justify-content: center;
   max-width: 900px;
@@ -61,6 +61,8 @@ form button {
 .score-board {
   border: 2px solid black;
   list-style-type: none;
+	height: 516px;
+	overflow: hidden;
 }
 
 li {
