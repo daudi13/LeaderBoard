@@ -8,7 +8,7 @@ const fetchScore = async function (url, id, score) {
 
     return objs;
   } catch (err) {
-    return alert(err);
+    return (err);
   }
 };
 
