@@ -31,7 +31,6 @@ btnRefresh.addEventListener('click', () => {
 	location.reload()
 });
 
-
 onload = () => {
 		(async () => {
   try {
