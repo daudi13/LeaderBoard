@@ -73,4 +73,4 @@ Give a ⭐️ if you like this project!
 - David Ouma [github](https://github.com/daudi13)
 ## 📝 License
 
-This project is [MIT](./LICENCE) licensed.
+This project is [MIT](./LICENSE) licensed.

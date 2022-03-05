@@ -11,5 +11,5 @@ export const addScore = (url, id, score, bodyObject) => {
     method: 'POST',
     body: JSON.stringify(bodyObject),
     headers: { 'Content-type': 'application/json; charset=UTF-8' },
-  }).then((res) => res.json()).then((msg) => msg.result).catch((err) => (err));
+  }).then((res) => res.json()).then((msg) => (msg.result)).catch((err) => (err));
 };
