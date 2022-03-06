@@ -156,4 +156,6 @@ input:focus {
 
 .notification {
 	color: rgb(255, 251, 10);
+	transition: all 0.5s ease;
+	margin-bottom: 10px;
 }
