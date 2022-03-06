@@ -16,15 +16,24 @@ export const addScore = (url, id, score, bodyObject, hol) => {
     headers: { 'Content-type': 'application/json; charset=UTF-8' },
   }).then((res) => res.json())
     .then((msg) => {
-      hol.innerText = msg.result;
-      return setTimeout(() => {
-        hol.style.opacity = 0;
-      }, 3000);
+      if (msg.result) {
+        hol.innerText = msg.result;
+        setTimeout(() => {
+          hol.innerText = '';
+        }, 3000);
+      } else {
+        hol.innerText = msg.message;
+        hol.style.color = 'red';
+        return setTimeout(() => {
+          hol.innerText = '';
+        }, 3000);
+      }
+      return msg;
     })
     .catch((err) => {
       if (err) {
-        hol.style.color = 'red';
         hol.innerText = err;
+        hol.style.color = 'red';
         return setTimeout(() => {
           hol.style.opacity = 0;
         }, 3000);
