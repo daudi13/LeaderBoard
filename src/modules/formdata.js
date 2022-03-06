@@ -3,13 +3,20 @@ export const createGame = (base, endpoint, bodyObject) => {
     method: 'POST',
     body: JSON.stringify(bodyObject),
     headers: { 'Content-type': 'application/json; charset=UTF-8' },
-  }).then((response) => response.json()).then((msg) => msg).catch((err) => (err));
+  })
+    .then((response) => response.json())
+    .then((msg) => msg.result)
+    .catch((err) => (err));
 };
 
-export const addScore = (url, id, score, bodyObject) => {
+export const addScore = (url, id, score, bodyObject, hol) => {
   fetch([url, id, score].join(''), {
     method: 'POST',
     body: JSON.stringify(bodyObject),
     headers: { 'Content-type': 'application/json; charset=UTF-8' },
-  }).then((res) => res.json()).then((msg) => (msg.result)).catch((err) => (err));
+  }).then((res) => res.json())
+    .then((msg) => { hol.innerText = msg.result; })
+    .catch((err) => {
+      if (err) hol.innerText = err;
+    });
 };

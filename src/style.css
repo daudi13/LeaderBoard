@@ -153,3 +153,7 @@ input:focus {
   border: none;
   outline: none;
 }
+
+.notification {
+	color: rgb(255, 251, 10);
+}

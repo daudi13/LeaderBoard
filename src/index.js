@@ -8,6 +8,7 @@ export const scoreBox = document.querySelector('.score-board');
 export const btnrefresh = document.querySelector('.refresh');
 export const btnSubmit = document.querySelector('.submit');
 export const btnRefresh = document.querySelector('.refresh');
+export const notification = document.querySelector('.notification');
 
 const newGame = {
   name: 'Primer',
@@ -22,7 +23,7 @@ btnSubmit.addEventListener('click', (e) => {
     score: score.value,
   };
 
-  addScore('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/', 'OAUb8nEFoWJiiqLP7UjF/', 'scores', newForm);
+  addScore('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/', 'IgK6r3lRfL4ZPyxrcCbb/', 'scores', newForm, notification);
   username.value = '';
   score.value = '';
 });
@@ -34,7 +35,7 @@ btnRefresh.addEventListener('click', () => {
 onload = () => {
 		(async () => {
   try {
-    const vals = await fetchScore('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/', 'OAUb8nEFoWJiiqLP7UjF/', 'scores');
+    const vals = await fetchScore('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/', 'IgK6r3lRfL4ZPyxrcCbb/', 'scores');
 		const arrs = vals.result.sort((a, b) => b.score - a.score).slice(0, 10);
     arrs.map((arr) => {
       const listItem = document.createElement('li');
