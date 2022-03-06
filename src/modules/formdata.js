@@ -18,6 +18,7 @@ export const addScore = (url, id, score, bodyObject, hol) => {
     .then((msg) => {
       if (msg.result) {
         hol.innerText = msg.result;
+        hol.style.color = 'yellow';
         setTimeout(() => {
           hol.innerText = '';
         }, 3000);
