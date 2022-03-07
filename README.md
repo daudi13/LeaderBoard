@@ -14,7 +14,7 @@
 
 #### Cloning the project
 ```
-git clone  https://github.com/daudi13/LeaderBoard.git/<Your-Build-Directory>
+git clone  https://github.com/daudi13/LeaderBoard.git
 ```
 
 ## running the project with webpack locally
@@ -52,7 +52,6 @@ npx eslint .
 
 ## Getting packages and debuging with Webhint
 ```
-npm init -y
 npm install --save-dev hint@6.x
 ```
 ##### For validation detection using Webhint Run
